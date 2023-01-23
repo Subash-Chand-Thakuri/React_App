@@ -15,6 +15,13 @@ function TxtArea(props) {
     setText(newText);
   }
 
+  const handleClearClick =()=>{
+    
+    let newText = "";
+    setText(newText);
+  }
+  
+
   const handleRevClick =()=>{
     
     let newText = text.split('').reverse().join('');
@@ -41,7 +48,7 @@ function TxtArea(props) {
   <button type="button" className="btn btn-secondary mx-2 my-2" onClick={handleUpClick} >UpperClass</button>
   <button type="button" className="btn btn-info mx-2 my-2" onClick={handleDownClick}>LowerClass</button>
   <button type="button" className="btn btn-primary mx-2 my-2" onClick={handleRevClick}>Reverse</button>
-  {/* <button type="button" className="btn btn-info mx-2 my-2" onClick={handleDownClick}>LowerClass</button> */}
+  <button type="button" className="btn btn-info mx-2 my-2" onClick={handleClearClick}>Clear Text</button>
     </div>
     <div className="container my-3">
       <h1>Summary of the text:</h1>
