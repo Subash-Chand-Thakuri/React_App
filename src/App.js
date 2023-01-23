@@ -1,23 +1,20 @@
 import './App.css';
 
- //this is single default import
-// import Header from './components/Header'; 
-// import Footer from './components/Footer';
 
-//single import
-//import {Header} from "./Header"
-
-// import {Header,Footer} from './Header';  //this is multiple import
-
-import Student from './components/Student';
+import Navbar from './components/Navbar';
+import TxtArea from './components/TxtArea';
 
 
 function App() {
 
 
   return(
-    <div className="App">
-    <Student name="subash" age={20} />
+    <div className="App" >
+      <Navbar />  
+      <div className="container">
+      <TxtArea heading="Enter Here" />  
+      </div>
+   
     </div>
   );
   
